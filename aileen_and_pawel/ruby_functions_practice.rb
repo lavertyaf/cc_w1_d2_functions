@@ -41,6 +41,12 @@ def number_to_full_month_name(number_of_the_month)
 
   when 9
     "September"
-  end 
+  end
     return month_as_string
+
+end
+
+def number_to_short_month_name(month_number)
+  full_month = number_to_full_month_name(month_number)
+  return full_month[0..2]
 end
